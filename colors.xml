@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- FoodCheck Cartoon Palette -->
+    <color name="primary_pastel_green">#7BCFA6</color>
+    <color name="secondary_pastel_yellow">#FFE08A</color>
+    <color name="accent_peach">#FFB38A</color>
+    <color name="light_blue">#A9DDF5</color>
+    <color name="warm_cream">#FFFBF2</color> <!-- Lighter, softer cream -->
+    <color name="dark_brown">#4E453E</color> <!-- Slightly softer brown -->
+    <color name="pure_white">#FFFFFF</color>
+
+    <!-- Kid mode aliases -->
+    <color name="kid_red">#FFB38A</color> <!-- Using peach as accent red -->
+    <color name="kid_yellow">#FFE08A</color>
+    <color name="kid_blue">#A9DDF5</color>
+    <color name="kid_green">#7BCFA6</color>
+    <color name="kid_purple">#A9DDF5</color> <!-- Reusing light blue -->
+
+    <color name="kid_background">#FFF9EC</color>
+    <color name="kid_surface">#FFFFFF</color>
+    <color name="kid_text_dark">#403A35</color>
+</resources>

@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.App.KidMode" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/kid_blue</item>
+        <item name="colorSecondary">@color/kid_yellow</item>
+        <item name="colorSurface">@color/kid_surface</item>
+        <item name="android:windowBackground">@color/kid_background</item>
+        <item name="android:textColor">@color/kid_text_dark</item>
+        <item name="fontFamily">@font/fredoka</item>
+        <item name="android:fontFamily">@font/fredoka</item>
+    </style>
+</resources>

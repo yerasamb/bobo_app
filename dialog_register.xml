@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="32dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="0dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/warm_cream">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/create_account_title"
+                android:textAppearance="@style/TextAppearance.Kid.Title"
+                android:textSize="24sp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Username -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username_label"
+                android:textAppearance="@style/TextAppearance.Kid.Label"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/regUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username_hint"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="text"
+                android:textAppearance="@style/TextAppearance.Kid.Label"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_label"
+                android:textAppearance="@style/TextAppearance.Kid.Label"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/regPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_hint"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="textPassword"
+                android:textAppearance="@style/TextAppearance.Kid.Label"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Confirm Password -->
+            <EditText
+                android:id="@+id/regConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirm_password_hint"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="textPassword"
+                android:textAppearance="@style/TextAppearance.Kid.Label"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Role Selector -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_role"
+                android:textAppearance="@style/TextAppearance.Kid.Label"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp" />
+            <android.widget.Spinner
+                android:id="@+id/regRoleSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_edit_text"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Child Selector (Container) -->
+            <LinearLayout
+                android:id="@+id/regChildContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_child_label"
+                    android:textAppearance="@style/TextAppearance.Kid.Label"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="4dp" />
+                <EditText
+                    android:id="@+id/regChildName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/child_name_hint"
+                    android:background="@drawable/bg_edit_text"
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.Kid.Label"
+                    android:layout_marginBottom="16dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/regBtnCreate"
+                style="@style/Widget.App.Button.Kid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/regBtnCancel"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@android:string/cancel"
+                android:textColor="@color/dark_brown"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</com.google.android.material.card.MaterialCardView>

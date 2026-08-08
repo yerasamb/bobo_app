@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    style="@style/Widget.App.Card.Kid">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imagePhoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textMealType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="🍲 Lunch"
+            android:textAppearance="@style/TextAppearance.Kid.Label"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imagePhoto"
+            app:layout_constraintEnd_toStartOf="@id/textStatus"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="August 8"
+            android:textAppearance="@style/TextAppearance.Kid.Label"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/textMealType"
+            app:layout_constraintStart_toStartOf="@id/textMealType"
+            app:layout_constraintEnd_toEndOf="@id/textMealType"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textTeacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Teacher: Ms. Apple"
+            android:textAppearance="@style/TextAppearance.Kid.Label"
+            android:textSize="12sp"
+            android:textColor="@color/dark_brown"
+            app:layout_constraintTop_toBottomOf="@id/textTime"
+            app:layout_constraintStart_toStartOf="@id/textMealType"
+            app:layout_constraintEnd_toEndOf="@id/textMealType"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✓ Checked"
+            android:textColor="@color/primary_pastel_green"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <!-- Hidden details from old design but keeping IDs for adapter compatibility -->
+        <TextView android:id="@+id/textChild" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

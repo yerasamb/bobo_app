@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing -->
+    <dimen name="kid_spacing_xs">8dp</dimen>
+    <dimen name="kid_spacing_sm">16dp</dimen>
+    <dimen name="kid_spacing_md">24dp</dimen>
+    <dimen name="kid_spacing_lg">32dp</dimen>
+
+    <!-- Corner radius -->
+    <dimen name="kid_radius_button">32dp</dimen>
+    <dimen name="kid_radius_card">24dp</dimen>
+
+    <!-- Touch targets -->
+    <dimen name="kid_touch_target_min">72dp</dimen>
+</resources>

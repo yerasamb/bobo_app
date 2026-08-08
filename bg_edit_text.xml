@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/kid_surface" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/kid_blue" />
+    <corners android:radius="@dimen/kid_radius_card" />
+    <padding
+        android:bottom="12dp"
+        android:left="16dp"
+        android:right="16dp"
+        android:top="12dp" />
+</shape>
